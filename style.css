@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, 'DIN alternate';
     box-sizing: border-box;
 }
 html{
@@ -14,7 +14,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/IMG_8848\ 2.jpeg);
+    background-image: url(images/top.png);
     background-size: cover;
     background-position: center;
 }
@@ -67,9 +67,9 @@ nav ul li a:hover::after{
     margin-top: 20%;
     font-size: 20px;
     position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -160%); /* Centers the text box */
+    /*top: 50%; /* Adjust as needed */
+    /*left: 50%; /* Adjust as needed */
+   /*transform: translate(-50%, -160%); /* Centers the text box */
     background-color: hsla(0, 0%, 0%, 0.633); /* black */
     padding: 45px;
     border-radius: 10px; /* Optional for rounded corners */
@@ -84,6 +84,12 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #aa33ff;
 }
+
+.header-text span{
+    font-family: 'DIN alternate';
+    color: #33ffda;
+}
+
 
 /* ---------about--------- */
 #about{
@@ -423,7 +429,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/phone-background.jpeg);
+        background-image: url(images/mobile.png);
     }
     .header-text{
         margin-top: 100%;
@@ -530,4 +536,5 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
 
