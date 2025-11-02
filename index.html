@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin Villanueva's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/ef57672ffd.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
-            <img src="images/logo 2.png" class="logo">
+            <img src="images/logo 2.png" class="logo" alt="Edwin Gabriel Logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -24,10 +27,8 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Aspiring Software Engineer</p>
+            <p>AI Software Engineer</p>
             <h1>Hi, I'm <span>Edwin G.</span></h1>
-            
-            <!--<p>The <span>FUTURE</span> of <span>SOFTWARE DEVELOPMENT</span> </p>-->
         </div>
     </div>
 </div> 
@@ -37,135 +38,145 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/user.jpg">
+                <!-- you can swap this image later when you have your new avatar -->
+                <img src="images/user.jpg" alt="Photo of Edwin">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Currently a Computer Science student at the University of Central Florida, I have a solid academic foundation with an AICE diploma and an associate's degree from Indian River State College, which I achieved before completing high school. My educational journey is marked by a deep interest in technology and its applications, with a side passion for music that occasionally blends into my technical pursuits. Driven by curiosity and a desire for innovation, I am dedicated to exploring the dynamic field of computer science and its potential for real-world impact.
-
-
+                <p>
+                    I'm a Computer Science student at the University of Central Florida (graduating May 2026) specializing in AI-driven and full-stack systems that merge creativity with technology. 
+                    I love breaking complex problems into clear, procedural steps since 6th grade (designing games for critical thinking class). 
+                    Recently, I’ve been developing AI cyber-defense agents, interactive user interfaces, and browser automation tools, and I ultimately want to contribute to Nintendo’s mission of creating meaningful, joyful software.
                 </p>
 
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick = "opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick = "opentab('Education')">Education</p>
-                    <p class="tab-links" onclick = "opentab('Extracurriculars')">Extracurriculars</p>
-                    <p class="tab-links" onclick = "opentab('Projects')">Projects</p>
-                    <p class="tab-links" onclick = "opentab('Work Experience')">Work Experience</p>
-
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Extracurriculars')">Extracurriculars</p>
+                    <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                    <p class="tab-links" onclick="opentab('Work Experience')">Work Experience</p>
                 </div>
-                <div class="tab-contents active-tab" id = "Skills">
-                    <ul>
-                        <li><span>Programming Languages and Tools</span><br>    
-                            - Studying in C and Python (learning C++ and Java)<br> 
-                            - Adept in applying data structures and algorithms to solve complex problems<br>
-                            - Efficient in conceptualizing program goals and conducting thorough research to address knowledge gaps
-                                <br><br><br>
-                        </li>
-                        
-                        <li><span>Problem-Solving</span><br>- Skilled at breaking down complex problems and implementing effective solutions<br>- Experienced in utilizing a methodical approach to learning and practicing new concepts in programming
-                        </li>
 
+                <!-- SKILLS -->
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li>
+                            <span>Programming Languages</span><br>
+                            C, Python, JavaScript/TypeScript, C++, C#, PHP, HTML/CSS, Java, Haskell, Swift
+                        </li>
+                        <li>
+                            <span>Frameworks & Tools</span><br>
+                            Node.js / Express, React, Three.js, Flask / FastAPI, Gymnasium (RL), OpenAI API
+                        </li>
+                        <li>
+                            <span>DevOps / Systems</span><br>
+                            GitHub Actions, Linux, Docker, SSH, Proxmox
+                        </li>
+                        <li>
+                            <span>Currently Learning</span><br>
+                            Rust, Tauri
+                        </li>
+                        <li>
+                            <span>Problem Solving</span><br>
+                            Breaking complex systems into procedural steps, building data-driven dashboards, designing AI/agent flows for real users
+                        </li>
                     </ul>
                 </div>
 
-                <div class="tab-contents" id = "Education">
+                <!-- EDUCATION -->
+                <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>Indian River State College</span><br>
-                                - Associate's of the Arts Degree<br>
-                                - Graduated: April 2022<br>
-                                - GPA: 3.5
-                                <br><br><br>
+                        <li>
+                            <span>University of Central Florida</span><br>
+                            B.S. in Computer Science — Expected May 2026<br>
+                            GPA: 3.5 | Dean’s List<br>
+                            Foundation Exam: 94/100 (Top 1%)<br><br>
+                            <strong>Relevant Coursework:</strong><br>
+                            Software Engineering (MS), Systems Software, Mobile Device Software Development, Object Oriented Programming, Security in Computing, Topics in Cloud Computing and Cybersecurity (AWS), AI Game Programming, Senior Design
+                            <br><br>
                         </li>
-                        <li><span>University of Central Florida</span><br>
-                                - Bachelor's Degree in Computer Science, Expected Spring 2026<br>
-                                - GPA: 3.47
-                                <br><br><br>
+                        <li>
+                            <span>Indian River State College</span><br>
+                            A.A. — General Studies (Computer Science Track) — April 2022<br>
+                            GPA: 3.5 | Dean’s List<br>
+                            Relevant Coursework: Computer Programming in C++, College Computing
                         </li>
-                        
-                        <li><span>Relevant Coursework</span><br>
-                                - Intro to Programming using Python<br>
-                                - Intro to C Programming<br>
-                                - Computer Science I with an emphasis on C<br>
-                                - Computer Logic and Organization<br>
-                                - Security in Computing
-                                <br><br><br>
-                        </li>
-
-                        <li><span>Academic Projects</span><br>
-                                - Developed and implemented data structures such as stacks, linked lists, binary search trees, and hash tables in various class projects<br>
-                                - Engaged in problem-solving exercises to apply theoretical knowledge in practical scenarios<br>
-                        </li>
-
                     </ul>
                 </div> 
 
-
-                <div class="tab-contents" id = "Extracurriculars">
+                <!-- EXTRACURRICULARS -->
+                <div class="tab-contents" id="Extracurriculars">
                     <ul>
-                        <li><span>Upcoming Participation</span><br>    
-                            - Planning to join tech-related clubs and participate in hackathons to further enhance technical skills and collaborate with peers
-                                <br><br><br>
+                        <li>
+                            <span>Society of Hispanic Professional Engineers (SHPE)</span><br>
+                            Member — January 2025 – Present
                         </li>
-                        
-                        <li><span>Personal Projects</span><br>
-                            - Currently developing an interactive software tool to aid in guitar practice, designed to improve fretboard memorization and dexterity<br>
-                            - Created a program to assist songwriters with overcoming creative blocks by generating songwriting prompts based on user-specified tempo and mood, with ongoing enhancements to include genre and thematic elements
-                            <br><br><br>
+                        <li>
+                            <span>Technical Clubs / Coursework Projects</span><br>
+                            Contributed to browser-automation, AI experimentation, and group software projects at UCF.
                         </li>
-
-                        <li><span>Collaborative Experience</span><br>
-                            - Partnered with classmates on various computer science assignments, providing mutual support and gaining alternative perspectives on problem-solving
-                            <br><br><br>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-                <div class="tab-contents" id = "Projects">
-                    <ul>
-                        <li><span>Song Idea Generator (Personal Project)</span><br>    
-                            - Programmed a tool to inspire songwriters by generating songwriting prompts, including tempo, key, and genre suggestions, leveraging user input for tailored output.
-                            Planning to integrate GPT API for advanced feature implementation, including keyword and theme generation.                              
-                             <br><br><br>
-                        </li>
-                        
-                        <li><span>Guitar Practice Software (Personal Project)</span><br>
-                            - Developing an application to facilitate guitar practice by providing interactive exercises aimed at improving fretboard knowledge and playing speed.
-                            <br><br><br>
-                        </li>
-
-                        <li><span>Early Game Design (Educational Projects)</span><br>
-                            Engaged in foundational game design as part of a middle school class, culminating in the creation of several games  (including, but not limited to):<br><br>
-                            - Pong Clone: Reimagined the classic arcade game, focusing on gameplay mechanics and user interface.<br>
-                            - Side-scrolling Adventure: Developed a simple side-scrolling game, implementing level design and character control.<br>
-                            - Fruit Clicker Game: Created an interactive game to practice speed and accuracy in response to dynamic prompts.<br>
-                        </li>
-
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id = "Work Experience">
-                    <ul>
-                        <li><span>Walgreen's (April 2021 - February 2022 ... May 2023 - July 2023)</span><br>    
-                            - Provide friendly and efficient service.<br> 
-                            - Construct and maintained displays storewide.<br>  
-                            - Register purchases on cash register.<br>
-                            - Operate photographic machinery.  
-                             <br><br><br>
-                        </li>
-                        
-                        <li><span>AT&T - (February 2022 - April 2023)</span><br>
-                            - Provide customers with courteous customer service.<br>
-                            - Generate sales and personalized solutions for their needs.<br>
-                            - Maintain a clean and organized environment.
-                            <br><br><br>
+                        <li>
+                            <span>Personal Development</span><br>
+                            Blending music + software through small tools, songwriting utilities, and creative dashboards.
                         </li>
                     </ul>
                 </div>
 
+                <!-- PROJECTS -->
+                <div class="tab-contents" id="Projects">
+                    <ul>
+                        <li>
+                            <span>Intelligent Browser Agents (Senior Design) — Project Manager</span><br>
+                            Led a 5-member team to build AI-powered browser agents capable of autonomous web navigation, DOM extraction, and multi-step task automation for research use at UCF.<br>
+                            - Coordinated agent architecture, browser tooling, and UX for non-technical users.<br>
+                            - Repo: part of UCF Senior Design (private/university)<br><br>
+                        </li>
+                        <li>
+                            <span>Fitopia (POOSD / Large Project) — Project Manager</span><br>
+                            Semester-long MERN fitness tracking app with an interactive 3D dashboard, secure auth, XP-based progression, and friend leaderboard.<br>
+                            - Managed a 6-person team, wrote API integrations, and connected React UI to Express/MongoDB.<br><br>
+                        </li>
+                        <li>
+                            <span>iCloud File Downloader (Python)</span><br>
+                            Python application that logs into iCloud and downloads photos/files to a user-selected local directory so users can free up iCloud storage and avoid unnecessary paid upgrades.<br>
+                            - Organized downloads by month/year; expandable to Notes/Drive/Voice Memos.<br>
+                            - Built to be user-friendly for non-technical people.<br><br>
+                        </li>
+                        <li>
+                            <span>Song Idea Generator</span><br>
+                            Tool to generate songwriting prompts (tempo, key, genre, theme) to help with creative blocks. Planned GPT/OpenAI integration for lyric/thematic ideas.<br><br>
+                        </li>
+                        <li>
+                            <span>Systems Software Projects (SimpleC)</span><br>
+                            Implemented a compiler for a SimpleC language in C as part of Systems Software at UCF; reinforced low-level understanding and parsing.
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- WORK EXPERIENCE -->
+                <div class="tab-contents" id="Work Experience">
+                    <ul>
+                        <li>
+                            <span>Full Stack AI Software Engineer — Command Post Technologies</span><br>
+                            June 2025 – Present<br>
+                            At CPT, I work on defense-focused AI R&D, building agents that run across virtualized training environments.<br>
+                            • Developed AI-driven cyber defense agents for virtualized training, automating red-team simulations and real-time analytics using Python, FastAPI, JavaScript, and PostgreSQL.<br>
+                            • Built internal dashboards to visualize agent activity and results for both technical and non-technical users.<br>
+                            • Led development of a reinforcement-learning penetration-testing agent that emulates adaptive adversary behavior through secure tool execution.<br><br>
+                        </li>
+                        <li>
+                            <span>Peer-Success Coach — Military and Veterans Student Success Center (UCF)</span><br>
+                            August 2024 – June 2025<br>
+                            • Connected students with academic, counseling, and financial resources to support their success.<br>
+                            • Helped student veterans and dependents navigate campus services in a way that fit their goals.<br><br>
+                        </li>
+                        <li>
+                            <span>Earlier Experience</span><br>
+                            Walgreens (Apr 2021 – Feb 2022, May 2023 – July 2023) — customer service, store presentation, POS systems.<br>
+                            AT&amp;T (Feb 2022 – Apr 2023) — customer solutions, sales, maintaining a clean and organized environment.
+                        </li>
+                    </ul>
+                </div>
 
             </div>
         </div>
@@ -179,16 +190,33 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2>Software Development</h2>
-                <p>As a dedicated computer science student, I offer custom software development services with a proficiency in C, C++, and Python. My approach is grounded in a deep understanding of data structures and algorithms, ensuring that I deliver efficient and effective software solutions. I excel at creating tools and utilities, such as a guitar practice program and a songwriting aid, which are both innovative and user-centric. I am adept at transforming complex problems into intuitive applications, with a commitment to quality and functionality.</p>
-            <a href="https://www.linkedin.com/in/edwin-villanueva/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BjCtrPuASTHSgxf93ft%2BnJg%3D%3D">Learn More</a>
+                <h2>Full-Stack Development</h2>
+                <p>
+                    Custom web applications built with JavaScript/TypeScript, React, and Node.js/Express. 
+                    I focus on clean architecture, readable code, and features that map to real user needs.
+                </p>
+                <a href="https://www.linkedin.com/in/edwin-villanueva/">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI Systems &amp; Automation</h2>
+                <p>
+                    Design and implementation of AI-driven agents, reinforcement learning experimentation, 
+                    cybersecurity simulation tooling, and API-integrated automation (FastAPI / Flask / OpenAI).
+                    Experience deploying agents across virtualized or Proxmox-backed environments.
+                </p>
+                <a href="https://github.com/Edwinvilla72">View Code</a>
             </div>
 
             <div>
                 <i class="fa-solid fa-gamepad"></i>
                 <h2>Game Development</h2>
-                <p>With a passion for game design ignited in my early education, I provide game development services that blend creativity with technical skill. Leveraging experience from designing a variety of games including pong clones, side-scrollers, and interactive click-based games, I focus on crafting engaging gameplay experiences. My game development portfolio showcases my ability to implement fundamental gaming principles and develop entertaining games that appeal to a wide audience.</p>
-            <a href="https://github.com/Edwinvilla72/Games-for-school">Learn More</a>
+                <p>
+                    Early-stage gameplay prototypes, UI/UX for playful experiences, and tools inspired by Nintendo’s 
+                    creativity-first philosophy. Started coding through game dev — I still build for fun.
+                </p>
+                <a href="https://github.com/Edwinvilla72/Games-for-school">Learn More</a>
             </div>
         </div>
     </div>
@@ -196,42 +224,43 @@
 
 
 <!-- ------------portfolio------------ -->
-
 <div id="portfolio">
     <div class="container">
-        <h1 class = "sub-title">My Work</h1>
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work1.jpeg">
+                <img src="images/work1.jpeg" alt="Intelligent Browser Agents">
                 <div class="layer">
-                    <h3>Song Idea Generator (Personal Project)</h3>
-                    <p>Programmed a tool to inspire songwriters by generating songwriting prompts, including tempo, key, and genre suggestions, leveraging user input for tailored output.
-                        Planning to integrate GPT API for advanced feature implementation, including keyword and theme generation.
+                    <h3>Intelligent Browser Agents (Senior Design)</h3>
+                    <p>
+                        AI-powered browser automation that can navigate, extract DOM data, and perform multi-step tasks.
+                        I served as Project Manager for a 5-person team.
                     </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/Intelligent-Browser-Agents"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
             <div class="work">
-                <img src="images/game.jpeg">
+                <img src="images/work3.jpeg" alt="Fitopia MERN Project">
                 <div class="layer">
-                    <h3>Early Game Design (Educational Projects)</h3>
-                    <p>Engaged in foundational game design as part of a middle school class, culminating in the creation of several games  (including, but not limited to):<br><br>
-                        - Pong Clone: Reimagined the classic arcade game, focusing on gameplay mechanics and user interface.<br>
-                        - Side-scrolling Adventure: Developed a simple side-scrolling game, implementing level design and character control.<br>
-                        - Fruit Clicker Game: Created an interactive game to practice speed and accuracy in response to dynamic prompts.<br>
+                    <h3>Fitopia (MERN + 3D Dashboard)</h3>
+                    <p>
+                        Semester-long POOSD project. Fitness tracking app with XP, leaderboards, and interactive UI.
+                        Managed a 6-person team and integrated the backend.
                     </p>
-                    <a href="https://github.com/Edwinvilla72/Games-for-school"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/Edwinvilla72"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
             <div class="work">
-                <img src="images/work3.jpeg">
+                <img src="images/work2.jpeg" alt="iCloud File Downloader">
                 <div class="layer">
-                    <h3>Guitar Practice Software (work-in-progress)</h3>
-                    <p>Developing an application to facilitate guitar practice by providing interactive exercises aimed at improving fretboard knowledge and playing speed.
+                    <h3>iCloud File Downloader (Python)</h3>
+                    <p>
+                        Download iCloud files directly to a chosen directory, organized by date, to help users free storage 
+                        and avoid monthly upgrade costs.
                     </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/Edwinvilla72/iCloud-File-Downloader"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -239,31 +268,21 @@
     </div>
 </div>
 
-<!-- ------------portfolio------------ -->
-
-
-
-
-
-
-
-<!--------------contact---------------->
-
+<!-- ------------contact------------ -->
 <div id="contact">
     <div class="container">
         <div class="row">
         <div class="contact-left">
             <h1 class="sub-title">Contact Me</h1>
-            <p> <i class="fa-solid fa-paper-plane"></i> Edwin.villa2@icloud.com</p>
-            <p> <i class="fa-solid fa-square-phone"></i> (772)607-3308</p>
+            <p><i class="fa-solid fa-paper-plane"></i> Edwin.villa2@icloud.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> (772)607-3308</p>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/edwin-villanueva"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://ucf.joinhandshake.com/stu/users/38781240"><i class="fa-solid fa-handshake"></i></a>
                 <a href="https://github.com/Edwinvilla72"><i class="fa-brands fa-github"></i></a>
-                <!--<a href="https://www.instagram.com/edwin.gabriel1/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>-->    <!--hid instagram and facebook links-->
             </div>
-            <a href="EdwinGVillanueva_Resume.pdf"  download class="btn btn2">Dowload Resume</a> 
+            <!-- keeping your filename exactly the same -->
+            <a href="EdwinGVillanueva_Resume.pdf" download class="btn btn2">Download Resume</a> 
         </div>
         <div class="contact-right">
 
@@ -273,7 +292,7 @@
                 <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                 <button type="submit" class="btn btn2">Submit</button>
             </form>
-            <span id="msg"></span> <!--========================================================-->
+            <span id="msg"></span>
         </div>
         </div>
     </div>
@@ -282,16 +301,7 @@
     </div>
 </div>
 
-<!--------------contact---------------->
-
-
-
-
-
-
-
-<!-- --------services--------- -->
-
+<!-- ------------scripts------------ -->
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
@@ -300,36 +310,29 @@
         for(tablink of tablinks){
             tablink.classList.remove("active-link");
         }
-
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
-
         event.currentTarget.classList.add("active-link");
-
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
 
 <script>
-
     var sidemenu = document.getElementById("sidemenu");
 
     function openmenu(){
-        sidemenu.style.right = "0px"; //if any issues arise with side menu, make this 0px instead!
+        sidemenu.style.right = "0px";
     }
 
     function closemenu(){
         sidemenu.style.right = "-200px";
     }
-
 </script>
 
-<!-- ------------about------------ -->
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwVal3yMkJmqAv1BQV3Bx5uBxy0WYXZXZBU5nNxtlLrMz92DsHsd4JzzzkCMrib0gph/exec'
     const form = document.forms['submit-to-google-sheet']
-  
     const msg = document.getElementById("msg")
 
     form.addEventListener('submit', e => {
@@ -344,6 +347,6 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+</script>
 </body>
 </html>
